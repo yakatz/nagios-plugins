@@ -44,7 +44,7 @@ class nagios:
 
 
 def exit(status, message):
-    print prefix + ' ' + status[1] + ' - ' + message
+    print(prefix + ' ' + status[1] + ' - ' + message)
     sys.exit(status[0])
 
 reboot_required_path = '/var/run/reboot-required'
